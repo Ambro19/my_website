@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="medium_blog_container">
+        <!-- Here we will mount our component -->
+    </div>
+    <body>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    </body> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Manipulation Portfolio</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+           padding: 0;
+            padding-left: 20px;
+            background-image: url('picture3.jpg') ;/*('pagePic.jpg')*/
+            background-size: cover;
+            
+        }
+        #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    /* Additional CSS for your content */
+    /* For example, you can style the header text */
+    header {
+        font-size: 20px;
+    }
+    p{
+        /*color:rgb(0, 26, 255)*/
+        color: black /*whitesmoke*/
+
+    }
+    h1{
+       color:black /*red*/
+    }
+
+    h2{
+        color:blanchedalmond/*red*/
+
+    }
+    /* ... Additional CSS styling ... */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Data Manipulation Portfolio</h1>
+        <!-- Add your personal information like name, email, and LinkedIn profile here -->
+        <address>
+            Email: ambrolum@gmail.com<br>
+            GitHub: <a href="https://github.com/Ambro19">github.com/Ambro19</a>
+    </address>
+    </header>
+
+    <section>
+        <h2>Select Projects</h2>
+        <!-- Add a brief description of your selected LabVIEW projects -->
+        <p>Pandas is a powerful open-source library for data manipulation and analysis in Python. It provides data structures and functions that make 
+            it easy to work with structured data, such as tables and time series, and perform various data operations efficiently.</p>
+    </section>
+
+    <section>
+        <h2>Project Descriptions</h2>
+        <!-- Write detailed descriptions for each project -->
+            <p> Project 1: Data Manipulation System<br>
+                Goals:
+                <ul>
+                    <li>Manipulate datasets using various operations and processes.</li>
+                </ul>
+
+                Challenges:
+                <ul>
+                    <li>Find a suitable framework to meet the project's expectations.</li>
+                </ul>
+
+                Solutions:
+                <ul>
+                    <li>Develop Python code for tasks such as DataFrame manipulation, data filtering, sorting, and more.</li>
+                </ul>
+            </p>
+        <!-- Add more project descriptions as needed -->
+    </section>
+
+    <section>
+        <h2>Code Samples</h2>
+        <!-- Share snippets of your LabVIEW code -->
+        <pre>
+            <code>
+# Create a DataFrame
+data = {'Name': ['John', 'Emma', 'Michael', 'Sophia', 'William'],
+        'Age': [25, 28, 31, np.nan, 22],
+        'Gender': ['M', 'F', 'M', 'F', 'M'],
+        'Salary': [50000, 60000, np.nan, 55000, 45000]}
+
+df = pd.DataFrame(data)
+
+# Data manipulation
+print("Original DataFrame:")
+print(df)
+
+# Selecting specific columns
+selected_columns = df[['Name', 'Age']]
+print("\nSelected columns:")
+print(selected_columns)
+
+# Filtering data
+filtered_data = df[df['Salary'] > 50000]
+print("\nFiltered data:")
+print(filtered_data)
+
+# Sorting data
+sorted_data = df.sort_values('Age', ascending=False)
+print("\nSorted data:")
+print(sorted_data)
+
+# Data cleaning
+# Handling missing values
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+print("\nDataFrame with filled missing values:")
+print(df)
+
+# Removing duplicates
+df.drop_duplicates(subset=['Name'], inplace=True)
+print("\nDataFrame without duplicates:")
+print(df)
+
+# Data analysis
+# Computing descriptive statistics
+statistics = df.describe()
+print("\nDescriptive statistics:")
+print(statistics)
+
+# Calculating correlations
+correlation = df.corr()
+print("\nCorrelation matrix:")
+print(correlation)
+
+# Time series analysis
+# Creating a time series index
+date_range = pd.date_range('2023-01-01', periods=len(df), freq='M')
+df['Date'] = date_range
+
+# Shifting values
+df['Previous Salary'] = df['Salary'].shift(1)
+print("\nDataFrame with shifted values:")
+print(df)
+
+# Input and output
+# Writing data to a CSV file
+df.to_csv('data.csv', index=False)
+
+# Reading data from a CSV file
+df_read = pd.read_csv('data.csv')
+print("\nDataFrame read from CSV:")
+print(df_read)
+            </code>
+        </pre>
+    </section>
+
+    <!-- Add more sections for Screenshots and Media, Documentation, Learning Journey, Collaborative Projects,
+         Personal Projects, Online Presence, Presentation, and Keep It Updated. -->
+
+    <footer>
+        <p>&copy; 2023 Ambroise Ngayinoko. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

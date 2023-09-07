@@ -1,0 +1,111 @@
+
+/*THIS CSS FILE IS FOR personalWeb.html*/
+    
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    /* Additional CSS for your content */
+    /* For example, you can style the header text */
+    header {
+        font-size: 24px;
+    }
+
+    /* Add more CSS for other elements as needed */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /*background-color: #f7f7f7;*/
+        background-image: url('picture3.jpg')  /*('picture3.jpg')*/
+    }
+    header {
+        background-color: #007BFF;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+    .section-heading {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .project {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    .portfolio {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    .contact {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+        color: #007BFF;
+    }
+    p {
+        color: black /* #555;*/
+    }
+    ul{
+        color:blue; /**/
+    }
+    li{
+        color: white     ; /* black;*/
+    } /* blue;*/    
+    h2{
+        color: white;
+        text-indent: 25px;
+    }
+    /* Apply indentation only to the first <p> within the "About Me" section */
+    #about .indent {
+        padding-left: 20px; /* Adjust the value as needed */
+    }
+    /* Apply white text color only to the first <p> within the "About Me" section */
+    #about .white-text {
+        color: white;
+    }
+    /* Style the <p> element inside about Me" section line, moved to the right */
+    #about p {
+        margin-left: 20px; /* You can adjust the value (in pixels) to control the amount of indentation */
+    }
+
+    /* Style the job title line */
+    .job-title {
+        font-weight: bold; /* Optionally make it bold */
+        margin: 0; /* Remove any default margin */
+    }
+
+    /* Style the main interest line */
+    .main-interest {
+        margin-top: 0; /* Remove top margin to eliminate spacing between the lines */
+    }
+
+    nav ul li {
+        color: white;
+    }
+
+    
+
+
