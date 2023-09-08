@@ -69,11 +69,20 @@
         color: black /* #555;*/
     }
     ul{
-        color:blue; /**/
+        color:white; /*blue*/
+    }
+
+    ul{
+        color:white; /*blue*/
     }
     li{
         color: white     ; /* black;*/
+    } 
+
+    li{
+        color: white; /* black;*/
     } /* blue;*/    
+    
     h2{
         color: white;
         text-indent: 25px;
@@ -100,10 +109,6 @@
     /* Style the main interest line */
     .main-interest {
         margin-top: 0; /* Remove top margin to eliminate spacing between the lines */
-    }
-
-    nav ul li {
-        color: white;
     }
 
     
