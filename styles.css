@@ -72,16 +72,9 @@
         color:white; /*blue*/
     }
 
-    ul{
-        color:white; /*blue*/
-    }
     li{
-        color: white     ; /* black;*/
-    } 
-
-    li{
-        color: white; /* black;*/
-    } /* blue;*/    
+        color: white     ; /* black; white*/
+    }    
     
     h2{
         color: white;
@@ -93,7 +86,7 @@
     }
     /* Apply white text color only to the first <p> within the "About Me" section */
     #about .white-text {
-        color: white;
+        color: rgb(255, 255, 255);
     }
     /* Style the <p> element inside about Me" section line, moved to the right */
     #about p {
@@ -109,6 +102,11 @@
     /* Style the main interest line */
     .main-interest {
         margin-top: 0; /* Remove top margin to eliminate spacing between the lines */
+    }
+
+    nav ul li a {
+        color: white; /* This sets the text color to white */
+        /* You can add additional CSS properties here if needed */
     }
 
     
