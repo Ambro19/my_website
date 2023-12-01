@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<!--<div id="container">--> 
-    <div id="medium_blog_container">
-        <!-- Here we will mount our component -->
-    </div>
-    <body>
-        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    </body> 
+<body>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</body> 
+    
+    <!--#################-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +13,77 @@
         <script src="script.js" defer></script>
         <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     </head>
+    
     <body>
         <header>
-            <h1>Ambroise Ngayinoko</h1>
-            <p class="job-title">Software Engineer</p>
+            <h1>Welcome To My Page!</h1>
+        <!--
+            <p class="job-title">Software/Computer Science Engineer</p>
             <p class="main-interest">Main Interest: Machine Learning | Cybersecurity | Web Dev</p>
+        -->
         </header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#projects">Projects</a></li>
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style> /*style file (style.css) for this head*/
+                @keyframes moveFromTopBelow {
+                    0% {
+                        transform: translateY(-100%);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+    
+                header {
+                    text-align: center;
+                    padding: 20px;
+                    background-color: #007BFF;   
+                 /*   font-size: 24px; Will change the letter size of the head */
+                    animation: moveFromTopBelow 2s ease-out; 
+                }
+                p{
+                    font-size: 20px;
+                }
+    
+                h1 {
+                    margin: 0;
+                    color:bisque
+                }
+    
+                .job-title, .main-interest strong{
+                    margin: 10px 0;
+                }
+                .main-interest strong {
+                    font-weight: bold;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1>Ambroise Lumanikio</h1>
+                <p></p>
+                    <p class="job-title"><strong>Software/Computer Science Engineer</p></strong>
+                    <p class="main-interest"><strong>Main Interest: Machine Learning | Cybersecurity | Web Devs </strong></p>
+            </header>
+        </body> 
+    </body><!--End /body-->
+
+    <!--#######################-->
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
             <!--<li><a href="#portfolio">Portfolio</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="about">
-            <h2>About Me</h2>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
             <p class="indent white-text">
                 <p>I earned my degree in Computer Science from the University at Albany, NY in May 2023. Before that, I transferred to Albany in 2019 with an Associate degree in Engineering Science from Tompkins Cortland Community College in Dryden, NY.</p>
                 <p>I am a passionate Machine Learning Research Engineer intern, currently working at Ivy, an open-source framework similar to TensorFlow, MXNet, Keras, Numpy, PaddlePaddle, and others.</p>
@@ -40,9 +92,10 @@
                 <p>My professional journey is driven by a deep fascination for machine learning, cybersecurity, and web development. I am constantly exploring the cutting edge of technology and am dedicated to pushing the boundaries of what's possible in these fields.</p>
                 <p>Let's embark on a quest to innovate and make a mark in the world of tech together.</p>
             </p>
-        </section>
-        <section id="achievements">
-            <h2>Achievements</h2>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
             <ul>
                 <li>Currently leading a Kaggle ML competition group: Open-Problem - Single-Cell Perturbations.</li>
                 <li>Secured an intesting internship position <a href="https://unify.ai/docs/models/" download>at Ivy,</a> an open-source project.</li>
@@ -50,8 +103,9 @@
                 <li>Contributing to a language translation project for Wikipedia's articles, an NLP 
                     (Natural Language Processing) project, <a href="https://www.grey-box.ca/">at Grey-Box.</a></li> 
             </ul>
-        </section>
-        <section id="projects">
+    </section>
+        
+    <section id="projects">
             <h2>Field Projects</h2>
             <div class="project">
                 <h3>Project Title 1: ML Competition - Open-Problem: Single - Cell Perturbations </h3>
@@ -82,9 +136,10 @@
                     to download a copy. (Please note the guide is being examined by Ivy engineers).
                 </p>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
             <div class="portfolio">
                 <h3>
                     <p>Feel free to reach out:</p>
@@ -96,12 +151,12 @@
                 </h3>
             </div>
 
-        </section>
-        <h3>
-        <footer>
+    </section>
+    <h3>
+            <footer>
             <p>&copy; 2023 Ambroise Ngayinoko. All rights reserved.</p>
-        </footer>
-        </h3>
-    </body>
-    </html>
+            </footer>
+    </h3>
+</body>
+</html>
 <!--</div> Centers the page -->
