@@ -75,7 +75,8 @@ ul{
 
 li{
     color:  black; /*white*/
-} /* blue;*/    
+    font-size: 24px;
+}   
     
 h2{
     color:  white;
